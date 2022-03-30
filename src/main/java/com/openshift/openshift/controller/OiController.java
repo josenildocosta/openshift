@@ -11,9 +11,4 @@ public class OiController {
     public String oi() {
         return "Oi openshift";
     }
-    
-    @PostMapping("/ola")
-    public @ResponseBody ResponseEntity<String> post(@RequestBody String nome) {
-        return new ResponseEntity<String>("Olá "+nome, HttpStatus.OK);
-    }
 }
